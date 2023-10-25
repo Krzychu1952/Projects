@@ -3,20 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Color Flipper - simple</title>
+  <title>Random Color</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="header-half"><a href="simple.html">Color Flipper</a></div>
-    <div class="header-half"><a href="hex.html">Random Color</a></div>
-  </header>
-  
-  <div class="container">
-    <p>Background color:</p>
-    <p id="color">#FFFFFF</p>
-  </div>
-  <button id="btn">Click me</button>
+  <nav>
+    <div class="nav-text nav-actual"> Random Color</div>
+    <a class="nav-link" href="simple.html"><div class="nav-text">Color Flipper</div></a>
+    <a class="nav-link" href="hex.html"><div class="nav-text">Random Color</div></a>
+  </nav>
+  <main>
+    <div class="container">
+      <h2 class="h2">Background color: <span id="color">#FFFFFF</span> </h2>
+
+      <button id="btn">CLICK ME</button>
+    </div>
+  </main>
 
   <script src="hex.js"></script>
 </body>
