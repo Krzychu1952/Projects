@@ -1,10 +1,75 @@
-@media (max-width: 500px) {
-  .nav-text{
-    font-size: 10pt;
-
+/* Extra small devices (phones) */
+@media screen and (max-width: 600px) {
+  nav{
+    grid-template-columns: 40% 30% 30%;
   }
-  main{
-    background-color: red;
+
+  .nav-link{
+    width: 90%;
+  }
+
+  .nav-text{
+    font-size: 12pt;
+  }
+}
+
+/* Small devices (portrait tablets and large phones) */
+@media screen and (min-width: 600px) {
+  nav{
+    grid-template-columns: 40% 30% 30%;
+  }
+
+  .nav-link{
+    width: 90%;
+  }
+
+  .nav-text{
+    font-size: 15pt;
+  }
+}
+
+/* Medium devices (landscape tablets) */
+@media screen and (min-width: 768px) {
+  nav{
+    grid-template-columns: 40% 30% 30%;
+  }
+
+  .nav-link{
+    width: 90%;
+  }
+
+  .nav-text{
+    font-size: 15pt;
+  }
+}
+
+/* Large devices (laptops/desktops) */
+@media screen and (min-width: 992px) {
+  nav{
+    grid-template-columns: 50% 25% 25%;
+  }
+
+  .nav-link{
+    width: 90%;
+  }
+
+  .nav-text{
+    font-size: 20pt;
+  }
+}
+
+/* Extra large devices (large laptops and desktops) */
+@media screen and (min-width: 1200px) {
+  nav{
+    grid-template-columns: 50% 25% 25%;
+  }
+
+  .nav-link{
+    width: 70%;
+  }
+
+  .nav-text{
+    font-size: 20pt;
   }
 }
 
@@ -17,7 +82,6 @@ main{
 display: grid;
 place-items: center;
 min-height: calc(100vh - 50px);
-/* background-color: #1e1e1e; */
 }
 
 nav{
@@ -25,7 +89,7 @@ nav{
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   height: 50px;
   display: grid;
-  grid-template-columns: 50% 25% 25%;
+  /* grid-template-columns: 50% 25% 25%; */
   justify-items: center;
   align-items: end;
 }
@@ -40,7 +104,7 @@ nav{
 }
 
 .nav-link{
-  width: 70%;
+  /* width: 70%; */
   background-color: #761874;
   color: white;
   display: flex;
@@ -62,8 +126,9 @@ nav{
 
 
 .nav-text{
-  font-size: 20pt;
+  /* font-size: 20pt; */
   text-decoration: none;
+  text-align: center;
 }
 
 .container{
